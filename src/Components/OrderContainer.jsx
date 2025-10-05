@@ -42,6 +42,9 @@ const OrderContainer = ({ ordersPromise }) => {
         const remainingOrders = orders.filter((item)=> item.id !== order.id)
         setOrders(remainingOrders)
 
+        // 4. showing toast
+        toast.success("The Order is Ready!")
+
     }
 
     return (
